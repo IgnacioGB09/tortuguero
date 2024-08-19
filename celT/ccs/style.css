@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url("../font/ClashDisplay-Regular.otf");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    max-width: 100% !important;
+    background-color: black;
+    
+    
+}
+
+body{
+    background-color: black;
+    cursor: url("../img/tortugaP.png"), auto;
+}
+
+header{
+    background: url("../img/bannercel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: rgba(3, 66, 48, 70%);
+    width: 100%;
+    border-radius: 33px;
+    z-index: 1;
+}
+nav img{
+    width: 5em; 
+ }
+ ul{
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+ #menu{
+    display: none;
+}
+input:checked ~ ul{
+    display: flex;
+    
+}
+label{
+    font-size: 2.5em;
+    color: white;
+}
+ul li {
+    padding: 10px;
+    list-style: none;
+    
+  }
+  ul li a{
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .fuente{
+    font-family:  'ClashDisplay-Regular';
+  }
+  h1{
+    text-align: center;
+    color: white;
+    font-size: 12vw;
+    padding: 80vw 0;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 0.1em
+  }
+  #about{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: url(../img/about.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    padding: 3.5em 0;
+ }
+ .hdos{
+    color: #83F6D6;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px black;
+    padding: 2em 0 1em 0;
+ }
+
+ .tamaño{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 2em;
+    padding:0 1em;
+ }
+
+ #activities{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+ }
+ #carrusel{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    overflow-x: auto;
+    padding: 1em;
+ }
+ #carrusel::-webkit-scrollbar{
+     display: none;   
+ }
+ #hiking{
+    background: url(../img/hiking.jpg) no-repeat;
+    grid-column: 1/2;
+    background-size: cover;
+}
+#view{
+    background: url(../img/viewpoint.jpg) no-repeat;
+
+    background-size: cover;
+}
+#hatch{
+    background: url(../img/hatch.jpg) no-repeat;
+
+    background-size: cover;
+}
+#nesting{
+    background: url(../img/nesting.jpg) no-repeat;
+    grid-column: 1/2;
+    background-size: cover;
+}
+#kayaking{
+    background: url(../img/Kayaking.jpg) no-repeat;
+    background-size: cover;
+}
+#fishing{
+    background: url(../img/fishing.jpg) no-repeat;
+    background-size: cover;
+}
+#canal{
+    background: url(../img/Canal.jpg) no-repeat;
+    background-size: cover;
+}
+#museum{
+    background: url(../img/Museum.jpg) no-repeat;
+    background-size: cover;
+}
+#city{
+    background: url(../img/city.jpg) no-repeat;
+    background-size: cover;
+}
+.cart{
+    width: 282px;
+    border-radius: 15px;
+    height:448px;
+    margin: 1em 2em 1em -0.5em;
+    object-fit: cover;
+}
+
+.hTres{
+    padding:4em;
+    font-size: 2em;
+    text-align: center;
+    font-family:  'ClashDisplay-Regular';
+    
+}
+.hoverC{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgba(17, 216, 160, 0.495);
+    color: black;
+}
+
+.grids{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+#restaurants h3, #hoteles h3{
+    text-align: center;
+    color: white;
+    padding: 1em 0 0.5em 0;
+}
+
+#restaurants img, #hoteles img{
+    width: 100%;
+    border-radius: 25px;
+    padding: 1em 1em 2.5em 1em;
+}
+footer{
+    background: white;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+footer img{
+    width: 10em;
+}
+@media (min-width: 1200px){
+    header{
+        background: url("../img/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vw;
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1em 2em;
+        border-radius: 33px;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        justify-self: end;
+    }
+    label{
+        display: none !important;
+    }
+    nav img{
+        margin: 0 1em 0 0;
+    }
+    nav ul li a{
+        font-size: 1.3em;
+    }
+
+    h1{
+        font-size: 7.5vw;
+        padding: 20vw 0;
+    }
+    #about{
+        grid-template-columns: repeat(2, 50%);
+        background-size: 50%;
+        background-position: right;
+        padding: 6em 0;
+    }
+    #about h2{
+        grid-column: 1/3; 
+        text-align: start;
+        padding: 1em ;
+     }
+     #about p{
+        text-align: left;
+     }
+     #about p{
+        padding: 1em 2em;
+        align-self: start;
+        line-height: 1.5em;
+    }
+
+    .max{
+
+        max-width: 1250px;
+        margin: auto;
+    }
+    #carrusel{
+        display: grid;
+        grid-template-columns: repeat(3, 282px);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 1em;
+        gap: 1em;
+        overflow-x: hidden;
+     }
+     
+     .hoverC{
+    
+        transition: all .2s ease-in-out;
+        background-color: transparent;
+        color: transparent;
+        
+    }
+    .cart:hover{
+        .hoverC{
+            background-color: rgba(17, 216, 160, 0.495);
+            color: black;
+            
+        }
+    } 
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        padding: 2em;
+    }
+    #restaurants h2, #hoteles h2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 0 0 1em 0;
+    }
+    #ninoH, #evergreen{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #nino, #evergreenI{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #patioH, #mawamba{
+        grid-column: 1/2;
+    }
+    #placeH , #tortuga{
+        grid-column: 2/3;
+    }
+    #place, #tortugaI{
+        grid-row: 4/5;
+    }
+    #restaurants img{
+        border-radius: 25px;
+        width: 100%;
+    }
+    #restaurants img, #restaurants div{
+        margin: 2.5em 0;
+    }
+    #restaurants div{
+        align-self: center;
+    }
+    #hoteles div{
+        align-self: center;
+    }
+    #hoteles img{
+        justify-self: center;
+    }
+    #restaurants img, #hoteles img{
+        width: 100%;
+        border-radius: 25px;
+        padding: 1em;
+    }
+    #restaurants p, #hoteles p{
+        line-height: 2em;
+        font-size: 1em;
+        text-align: left;
+    }
+    #restaurants h3, #hoteles h3{
+        text-align: left;
+        padding: 0.5em;
+    }
+    @keyframes growUp1 {
+        0% {
+            width: 1em;
+        }
+        100%{
+            width: 100%;
+        }
+        }
+    #restaurants .animacion{
+    animation: growUp1 2s forwards;
+    animation-timeline: scroll();
+    }
+    #hoteles .animacion{
+        animation: growUp1 2s forwards;
+    animation-timeline: scroll();
+    }    
+}
